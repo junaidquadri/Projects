@@ -1,0 +1,43 @@
+<?php
+function Sample_Test_menu(){
+	
+	$items['Sample_Test/Showitems']=array(
+			
+			'title' => 'ShowProducts',
+			'description' => 'Show All the products',
+			'page callback' => 'myfunction',
+			'access arguments' => array('access content'),
+			
+			
+			
+			
+			
+	);
+	
+	
+	
+	
+	
+	return $items;
+	
+}
+
+function myfunction(){
+	
+	
+	
+	
+	
+	return theme('my_Custom_Template');
+}
+
+
+
+
+
+function Sample_Test_theme(){
+	
+	
+	return array('my_Custom_Template' => array('template' => 'Sample_Test_Temp',),);
+	
+}

@@ -1,0 +1,4 @@
+name = Sample_Test
+description = to create table in the database
+package = core
+core = 7.x

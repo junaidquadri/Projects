@@ -1,0 +1,39 @@
+<?php
+function Sample_Test_schema(){
+	$schema['Item_Products'] = array(
+			
+			'description' => 'For items to save in the database',
+			'fields' => array(
+				'Prduct_Id'=> array(
+						'description' => 'Id for the product',
+						'type'=> 'int',
+						'unsigned' => true,
+						'not null' => true, 
+						
+						
+				),
+					'Product_Name' => array(
+							
+					'description' => 'name of the Product',
+					'type' => 'varchar',
+					'length' => 255,
+					'not null' => true,
+					'default' => '',						
+							
+							
+							
+					),
+			),
+	
+			
+	);
+	
+	
+	
+	
+	
+	
+	return $schema;
+	
+	
+}
